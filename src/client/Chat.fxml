@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="478.0" prefWidth="542.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="textFieldNachricht" layoutX="14.0" layoutY="439.0" onAction="#sendeNachricht" prefHeight="25.0" prefWidth="348.0" promptText="Nachricht" />
+      <ListView fx:id="listView_Nachrichten" layoutX="14.0" layoutY="14.0" prefHeight="419.0" prefWidth="348.0" />
+      <ListView fx:id="listView_angemeldeteNutzer" layoutX="366.0" layoutY="14.0" onMouseClicked="#clientPrivatOeffnen" prefHeight="419.0" prefWidth="164.0" />
+      <Button fx:id="button_Senden" layoutX="366.0" layoutY="439.0" mnemonicParsing="false" onMouseClicked="#sendeNachricht" prefHeight="25.0" prefWidth="164.0" text="Senden" />
+   </children>
+</AnchorPane>
