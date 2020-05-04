@@ -122,21 +122,7 @@ public class ClientControl implements Runnable
 						break;
 					case "privateNachricht":
 						PrivateNachricht pn = (PrivateNachricht) o;
-						Platform.runLater(new Runnable()
-						{
-							@Override
-							public void run()
-							{
-								try
-								{
-									clientPrivatOeffnen(pn.getAbsender()).getList_fluesterNachricht().getItems().add(pn);
-								} catch (IOException e)
-								{
-									// TODO Auto-generated catch block
-									e.printStackTrace();
-								}
-							}
-						});
+						guiController.itemsZurListeHinzufuegen(clientPrivatOeffnen(pn.getAbsender()).getList_fluesterNachricht(), pn);
 						break;
 					default: break;
 				}
