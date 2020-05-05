@@ -6,7 +6,7 @@ import javafx.event.EventHandler;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 
-public class Main extends Application
+public class MainClient extends Application
 {
 	private GuiController guiController;
 	private static Stage stage;

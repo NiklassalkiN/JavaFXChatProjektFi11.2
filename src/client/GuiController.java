@@ -107,8 +107,8 @@ public class GuiController
 			@Override
 			public void run()
 			{
-				Main.getStage().setScene(new Scene(root));
-				Main.getStage().show();
+				MainClient.getStage().setScene(new Scene(root));
+				MainClient.getStage().show();
 			}
 
 		});
